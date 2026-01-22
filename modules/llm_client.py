@@ -15,7 +15,7 @@ Answer the following question clearly and concisely:
         "stream": False
     }
 
-    response = requests.post(url, json=data, timeout=20)
+    response = requests.post(url, json=data, timeout=120)
     result = response.json()["response"]
 
     return result.strip()

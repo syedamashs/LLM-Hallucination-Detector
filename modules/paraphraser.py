@@ -18,7 +18,7 @@ Question: {question}
             "stream": False
         }
 
-        response = requests.post(url, json=data, timeout=20)
+        response = requests.post(url, json=data, timeout=60)
         result = response.json()["response"]
 
         lines = result.strip().split("\n")
