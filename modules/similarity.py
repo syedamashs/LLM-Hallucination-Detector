@@ -17,7 +17,7 @@ def compute_hcs(embeddings):
     return hcs
 
 
-def detect_hallucination(hcs, threshold=0.7):
+def detect_hallucination(hcs, threshold=0.75):
     if hcs < threshold:
         return True   # Hallucination
     else:
